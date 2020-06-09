@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://kit.fontawesome.com/9339050507.js" crossorigin="anonymous"></script>
+<style>
+* {box-sizing: border-box;}
+
+body {
+margin: 0;
+font-family: 'Pacifico', cursive;
+}
+
+.topnav {
+overflow: hidden;
+background-color: #e9e9e9;
+}
+
+.topnav a {
+float: left;
+display: block;
+color: black;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 17px;
+}
+
+.topnav a:hover {
+background-color: #ddd;
+color: black;
+}
+
+.topnav a.active {
+background-color: deeppink;
+color: white;
+}
+
+.topnav .search-container {
+float: right;
+}
+
+.topnav input[type=text] {
+padding: 6px;
+margin-top: 8px;
+font-size: 17px;
+border: none;
+}
+
+.topnav .search-container button {
+float: right;
+padding: 6px 10px;
+margin-top: 8px;
+margin-right: 16px;
+background: #ddd;
+font-size: 17px;
+border: none;
+cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+.topnav .search-container {
+float: none;
+}
+.topnav a, .topnav input[type=text], .topnav .search-container button {
+float: none;
+display: block;
+text-align: left;
+width: 100%;
+margin: 0;
+padding: 14px;
+}
+.topnav input[type=text] {
+border: 1px solid #ccc;
+}
+.topnav a{
+    font: 'Pacifico', cursive;
+}
+}
+.s1 {
+    margin-top: 25px;
+    margin-right: 16px;
+    padding-right: 200px;
+}
+.timetable{
+    padding: 100px;
+    margin-right: 50px;
+}
+</style>
+</head>
+<body>
+
+<div class="topnav">
+<a  href="index2.html"><small class="fa fa-home">Home</small></a>
+<a  href="index1.html"><small class="fa fa-user">Register</small></a>
+<a class="active" href="#contact"><small class="fa fa-calendar">Timetable</small> </a>
+<div class="search-container">
+<form action="/action_page.php">
+<input type="text" placeholder="Search.." name="search">
+<button type="submit"><i class="fa fa-search"></i></button>
+</form>
+</div>
+</div>
+<div class="timetable">
+    <table border="1" cellspacing="0" width="1000px" bordercolor="black">
+        <tr>
+            <th align="center">Time</th>
+            <th align="center">Monday</th>
+            <th align="center">Tuesday</th>
+            <th align="center">Wednesday</th>
+            <th align="center">Thursday</th>
+            <th align="center">Friday</th>
+            <th align="center">Saturday</th>
+        </tr>
+        <tr>
+            <th align="center" colspan="7">Morning</th>
+        </tr>
+        <tr>
+            <th align="center">7:30-9:00</th>
+            <td align="center" rowspan="2">Web Design</td>
+            <td align="center">Network</td>
+            <td align="center">Soft Skill</td>
+            <td align="center">Graphic Design</td>
+            <td align="center">Biz commerce</td>
+            <td align="center">Small Biz Account</td>
+        </tr>
+        <tr>
+            <th align="center">9:15-10:45</th>
+            <td align="center">Graphic Design</td>
+            <td align="center">OPP</td>
+            <td align="center" rowspan="2">Web Design</td>
+            <td align="center">Network</td>
+            <td align="center">Soft Skill</td>
+
+        </tr>
+        <tr>
+            <th align="center">11:00-12:30</th>
+            <td align="center">French</td>
+            <td align="center">English</td>
+            <td align="center">Stock Management</td>
+            <td align="center" bgcolor="red">Free</td>
+            <td align="center">Sport</td>
+        </tr>
+        <tr>
+            <td align="center" colspan="7">Afternoon</td>
+        </tr>
+        <tr>
+            <th align="center">01:00-02:30</th>
+            <td align="center" rowspan="2" colspan="4" bgcolor="red">Free</td>
+            <td align="center">English</td>
+            <td align="center">English</td>
+        </tr>
+        <tr>
+            <th align="center">02:45-04:00</th>
+            <td align="center">Fe</td>
+            <td align="center">English</td>
+        </tr>
+    </table>
+</div>
+</body>
